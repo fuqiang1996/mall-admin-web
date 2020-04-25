@@ -94,7 +94,7 @@
     methods: {
       getSelectMenuList() {
         fetchList(0, {pageSize: 100, pageNum: 1}).then(response => {
-          this.selectMenuList = response.data.list;
+          this.selectMenuList = response.data.records;
           this.selectMenuList.unshift({id: 0, title: '无上级菜单'});
         });
       },
